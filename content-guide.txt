@@ -1,0 +1,95 @@
+SGdoktorats – Saturs un informācija, kas jāievada mājaslapā
+==========================================================
+
+------------------------------------------------------------
+1. Pamatkontakti (izmanto visā lapā)
+------------------------------------------------------------
+
+Savāc un pārbaudi:
+- Klīnikas pilnais nosaukums (piem.: “SGdoktorats, SIA”)
+- Adrese (iela, mājas / korpusa numurs, pilsēta, pasta indekss)
+- Galvenais tālrunis reģistratūrai
+- Papildu tālrunis (ja ir – ārkārtas, vakara dežūras u.c.)
+- Galvenais e‑pasts (piem.: info@sgdoktorats.lv)
+- Papildu e‑pasti (piem.: pieraksts@sgdoktorats.lv, grāmatvedība@…)
+- Darba laiks (katrai nedēļas dienai)
+-
+
+Kur tas parādās lapā:
+- Sadaļa “Kontakti” – tālrunis, e‑pasts, adrese.
+- Sānu bloks “Apmeklējiet SGdoktorats” – adrese un darba laiks.
+- Footer – nosaukums un, ja nepieciešams, juridiskā frāze.
+
+------------------------------------------------------------
+2. Sākumlapa (“Sākums”)
+------------------------------------------------------------
+
+Mērķis: īsi un saprotami pateikt, kas jūs esat, kam palīdzat un kāpēc pie jums nākt.
+
+Ieteicamā informācija:
+- Īss virsraksts, kas apraksta jūsu galveno solījumu
+  - piem.: “Laipni lūgti jūsu ģimenes ārsta praksē”
+- 2–3 teikumi par to, KAM un KĀ jūs palīdzat
+  - piem.: ģimenēm, bērniem, senioriem; ilgtermiņa attiecības; mierīga vide utt.
+- 3–5 “īstermiņa” ieguvumi / priekšrocības (mazas frāzes)
+  - piem.: “Īsi gaidīšanas laiki”, “Profilaktiskās pārbaudes”, “Hronisku slimību uzraudzība”
+- Daži skaitļi / fakti, kas rada uzticību
+  - gadi praksē, vidējais apmierinātības novērtējums, pacientu skaits u.tml.
+- Viena rinda ar aicinājumu pieteikties
+  - piem.: “Uzņemam jaunus pacientus – aizpildiet īsu pieteikumu.”
+
+Ko vari nomainīt HTML failā:
+- Virsrakstu un tekstu sadaļā ar `id="page-home"`
+- “Pogas” tekstus (mazie ovāli – klasē `pill`)
+- Skaitļus un aprakstus statistikas blokos (klase `stat`)
+
+------------------------------------------------------------
+3. Komandas sadaļa (“Komanda”)
+------------------------------------------------------------
+
+Mērķis: parādīt sejas un kompetences, lai pacienti justos drošāk un pazītu savu ārstu.
+
+Savāc katram komandas loceklim:
+- Vārds, uzvārds
+- Amats un specializācija (piem.: “ģimenes ārsts”, “pediatrs”, “māsa”)
+- Kvalifikācija (piem.: “MD”, “sertificēts ģimenes ārsts”)
+- (Ja ir) īss teikums par galvenajām interesēm / specializāciju
+- (Ja ir) fotogrāfija – vēlams līdzīga izmēra portreti ar neitrālu fonu
+
+Ko vari darīt lapā:
+- Aizvietot esošos vārdus un amatus sadaļā ar `id="page-team"`
+- Nomainīt foto saites (`src` atribūtu) uz saviem attēliem 
+
+------------------------------------------------------------
+4. Jauna pacienta pieteikums (“Pieteikums”)
+------------------------------------------------------------
+
+Mērķis: ļaut jaunam pacientam ērti pieteikties tiešsaistē ar minimālo nepieciešamo informāciju.
+
+ sākotnējam pieteikumam :
+- Vārds, uzvārds
+- Dzimšanas datums
+- Tālrunis
+- E‑pasts
+- Galvenais iemesls / vajadzība (atlasāms sarakstā vai tekstā)
+- Brīvs komentārs (nav obligāts, bet noderīgs)
+
+------------------------------------------------------------
+5. Kontaktu sadaļa (“Kontakti”)
+------------------------------------------------------------
+
+Mērķis: skaidri un ātri atrast veidu, kā sazināties.
+
+Šeit jāparādās:
+- Galvenais tālrunis reģistratūrai (ar laika norādi, kad zvans tiek pieņemts)
+- Galvenais e‑pasts pacientu jautājumiem
+- Adrese, papildus var pievienot:
+  - Ēkas nosaukumu, stāvu, kabineta numuru
+  - Transports / stāvvieta (piem.: “Bezmaksas stāvvieta pie ēkas”)
+
+
+
+
+News page 
+team
+Kontakti 
