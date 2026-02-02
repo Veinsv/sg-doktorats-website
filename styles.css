@@ -174,6 +174,14 @@ header::before {
   padding: 1.05rem 1.05rem 0.35rem;
   box-shadow: 0 14px 26px rgba(236, 72, 153, 0.08);
 }
+
+.highlight-green {
+  border: 2px solid rgba(22, 163, 74, 0.36);
+  background: rgba(22, 163, 74, 0.06);
+  border-radius: var(--radius-md);
+  padding: 1.05rem 1.05rem 0.35rem;
+  box-shadow: 0 14px 26px rgba(22, 163, 74, 0.08);
+}
 .brand-text h1 {
   font-size: 1.28rem;
   letter-spacing: 0.01em;
@@ -319,6 +327,12 @@ h2 {
   border: 2px solid rgba(236, 72, 153, 0.42);
   background: rgba(236, 72, 153, 0.06);
   box-shadow: 0 14px 26px rgba(236, 72, 153, 0.10);
+}
+
+.card-subtle.highlight-green {
+  border: 2px solid rgba(24, 100, 53, 0.507);
+  background: rgba(34, 97, 94, 0.08);
+  box-shadow: 0 14px 26px rgba(34, 97, 94, 0.12);
 }
 .card-subtle h4 {
   font-size: 0.95rem;
