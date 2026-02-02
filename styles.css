@@ -329,6 +329,7 @@ h2 {
   box-shadow: 0 14px 26px rgba(236, 72, 153, 0.10);
 }
 
+/* Green highlight styling for cancer screening boxes */
 .card-subtle.highlight-green {
   border: 2px solid rgba(24, 100, 53, 0.85);
   background: rgba(34, 97, 94, 0.08);
