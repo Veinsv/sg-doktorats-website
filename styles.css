@@ -329,6 +329,165 @@ h2 {
   box-shadow: 0 14px 26px rgba(236, 72, 153, 0.10);
 }
 
+/* Akūtā stunda table - unique styling */
+.akuta-stunda-table {
+  background: var(--bg-main);
+  border: 1px solid rgba(139, 90, 60, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  max-width: 320px;
+  margin: 0;
+}
+
+.akuta-stunda-row {
+  display: flex;
+  border-bottom: 1px solid rgba(139, 90, 60, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.akuta-stunda-row:last-child {
+  border-bottom: none;
+}
+
+.akuta-stunda-row:hover {
+  background-color: rgba(73, 80, 87, 0.05);
+}
+
+.akuta-stunda-header {
+  background: var(--bg-main);
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(139, 90, 60, 0.15);
+}
+
+.akuta-stunda-cell {
+  flex: 1;
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+}
+
+.akuta-stunda-cell.day {
+  font-weight: 500;
+  color: #000000;
+  border-right: 1px solid rgba(139, 90, 60, 0.15);
+}
+
+.akuta-stunda-cell.time {
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Darba laiks table - 4 column styling */
+.darba-laiks-table {
+  background: var(--bg-main);
+  border: 1px solid rgba(139, 90, 60, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin: 0;
+}
+
+.darba-laiks-row {
+  display: flex;
+  border-bottom: 1px solid rgba(139, 90, 60, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.darba-laiks-row:last-child {
+  border-bottom: none;
+}
+
+.darba-laiks-row:hover {
+  background-color: rgba(73, 80, 87, 0.05);
+}
+
+.darba-laiks-header {
+  background: var(--bg-main);
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid rgba(139, 90, 60, 0.15);
+}
+
+.darba-laiks-cell {
+  flex: 1;
+  padding: 8px 10px;
+  text-align: center;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  border-right: 1px solid rgba(139, 90, 60, 0.15);
+}
+
+.darba-laiks-cell:last-child {
+  border-right: none;
+}
+
+.darba-laiks-cell.day {
+  font-weight: 500;
+  color: #000000;
+}
+
+.darba-laiks-cell.time {
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Mobile responsive styling for Kontakti page tables */
+@media (max-width: 768px) {
+  .akuta-stunda-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+  
+  .akuta-stunda-table > div {
+    min-width: 280px;
+  }
+  
+  .darba-laiks-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+  
+  .darba-laiks-table > div {
+    min-width: 500px;
+  }
+  
+  /* Custom scrollbar styling */
+  .akuta-stunda-table::-webkit-scrollbar,
+  .darba-laiks-table::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .akuta-stunda-table::-webkit-scrollbar-track,
+  .darba-laiks-table::-webkit-scrollbar-track {
+    background: rgba(139, 90, 60, 0.1);
+    border-radius: 4px;
+  }
+  
+  .akuta-stunda-table::-webkit-scrollbar-thumb,
+  .darba-laiks-table::-webkit-scrollbar-thumb {
+    background: rgba(139, 90, 60, 0.4);
+    border-radius: 4px;
+  }
+  
+  .akuta-stunda-table::-webkit-scrollbar-thumb:hover,
+  .darba-laiks-table::-webkit-scrollbar-thumb:hover {
+    background: rgba(139, 90, 60, 0.6);
+  }
+}
+
 /* Green highlight styling for cancer screening boxes */
 .card-subtle.highlight-green {
   border: 2px solid rgba(24, 100, 53, 0.85);
