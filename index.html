@@ -50,6 +50,7 @@
       <nav>
         <a href="#" class="active" onclick="showPage('home');return false;" id="nav-home">Sākums</a>
         <a href="#" onclick="showPage('team');return false;" id="nav-team">Komanda</a>
+        <a href="#" onclick="showPage('podologs');return false;" id="nav-podologs">Podologs</a>
         <a href="#" onclick="showPage('contact');return false;" id="nav-contact">Kontakti</a>
       </nav>
     </header>
@@ -236,7 +237,7 @@
       </section>
 
       <!-- Team Page -->
-      <section class="card" id="page-team" style="display:none;">
+      <section class="card" id="page-team" style="display:block;">
         <h2>Mūsu komanda</h2>
 
         <ul class="team-list">
@@ -258,7 +259,86 @@
               </div>
             </div>
           </li>
+          <li class="team-member">
+            <img class="team-photo team-photo-portrait" src="Pictures/VSmirnovaPed.png" alt="VSmirnova" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-photo team-photo-portrait team-avatar" style="display:none;">VS</div>
+            <div class="team-meta">
+              <strong>Viktorija Smirnova</strong>
+              <span>Podologs</span>
+              <span style="margin-top:0.55rem;">Podoloģe palīdz risināt dažādas pēdu veselības problēmas, nodrošinot gan ārstniecisko pēdu aprūpi, gan pēdu profilaksi.</span>
+            </div>
+          </li>
         </ul>
+      </section>
+
+      <!-- Podologs Page -->
+      <section class="card" id="page-podologs" style="display:none;">
+        <h2>Podologa pakalpojumi</h2>
+        
+        <div class="section-block">
+          <h3>Par mūsu podologu</h3>
+          <p class="lede">
+            Sertificēts podologs. Konsultē un veic procedūras pieaugušiem, jauniešiem un bērniem (no 3 g.v.).
+          </p>
+          <p>
+            Piedāvājam medicīnisko pēdu aprūpi, veicot:
+          </p>
+          <ul class="value-list">
+            <li>ārstniecisko pēdu aprūpi;</li>
+            <li>kāju nagu ārstniecisko aprūpi;</li>
+            <li>ieaugušu vai traumētu nagu korekciju;</li>
+            <li>varžacu un kārpu apstrādi;</li>
+            <li>brūču aprūpi;</li>
+            <li>ar sēnīšu infekciju saistītu pēdu ādas un nagu terapiju un profilaksi.</li>
+          </ul>
+        </div>
+
+        <div class="section-block">
+          <h3>Darba laiks</h3>
+          <div class="darba-laiks-table" role="table" aria-label="Podologa darba laiks">
+            <div class="darba-laiks-row darba-laiks-header" role="row">
+              <div class="darba-laiks-cell day" role="columnheader">Diena</div>
+              <div class="darba-laiks-cell time" role="columnheader">Laiks</div>
+            </div>
+            <div class="darba-laiks-row" role="row">
+              <div class="darba-laiks-cell day" role="rowheader">Pirmdiena</div>
+              <div class="darba-laiks-cell time" role="cell">9:00 – 20:00</div>
+            </div>
+            <div class="darba-laiks-row" role="row">
+              <div class="darba-laiks-cell day" role="rowheader">Otrdiena</div>
+              <div class="darba-laiks-cell time" role="cell">9:00 – 20:00</div>
+            </div>
+            <div class="darba-laiks-row" role="row">
+              <div class="darba-laiks-cell day" role="rowheader">Ceturtdiena</div>
+              <div class="darba-laiks-cell time" role="cell">9:00 – 20:00</div>
+            </div>
+            <div class="darba-laiks-row" role="row">
+              <div class="darba-laiks-cell day" role="rowheader">Piektdiena</div>
+              <div class="darba-laiks-cell time" role="cell">9:00 – 20:00</div>
+            </div>
+            <div class="darba-laiks-row" role="row">
+              <div class="darba-laiks-cell day" role="rowheader">Sestdiena</div>
+              <div class="darba-laiks-cell time" role="cell">9:00 – 20:00</div>
+            </div>
+          </div>
+          <p class="hint" style="margin-top:0.9rem;">Pieraksts un zvani tiek pieņemti darba laikā.</p>
+        </div>
+
+        <div class="section-block">
+          <h3>Pakalpojumi</h3>
+          <div class="split">
+            <div class="card-subtle">
+              <h4>Pieejamie pakalpojumi</h4>
+              <ul class="value-list">
+                <li>Podologa pieņemšana</li>
+                <li>Diabēta pēda</li>
+                <li>Kāju nagu apstrāde</li>
+                <li>Pirmreizēja konsultācija un pilna pēdu aprūpe</li>
+                <li>Podologa konsultācija</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Contact Page -->
@@ -374,7 +454,7 @@
   <script>
     // Minimal routing to show/hide "pages"
     function showPage(page) {
-      const pages = ['home', 'team', 'contact'];
+      const pages = ['home', 'team', 'podologs', 'contact'];
       pages.forEach(function(pg) {
         const section = document.getElementById('page-' + pg);
         const navLink = document.getElementById('nav-' + pg);

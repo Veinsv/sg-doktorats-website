@@ -442,6 +442,12 @@ h2 {
   color: #000000;
 }
 
+/* Podologs page specific styling - smaller and left-aligned */
+.darba-laiks-table.podologs {
+  max-width: 400px;
+  text-align: left;
+}
+
 /* Mobile responsive styling for Kontakti page tables */
 @media (max-width: 768px) {
   .akuta-stunda-table {
