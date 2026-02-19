@@ -131,6 +131,8 @@ header::before {
   height: 100%;
   max-width: 320px;
   object-fit: contain;
+  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
   display: block;
 }
 
@@ -140,6 +142,8 @@ header::before {
   display: block;
   object-fit: contain;
   margin-bottom: 0.75rem;
+  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
 }
 
 .page-logo-large {
@@ -149,6 +153,8 @@ header::before {
   margin-right: 1.5rem;
   flex-shrink: 0;
   align-self: flex-start;
+  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
 }
 
 .contact-hero {
